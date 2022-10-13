@@ -6,8 +6,9 @@ import os
 
 # draw board
 def drawboard():
+  print("-" for i in board + "--")
   for y in board:
-    out = ""
+    out = "|"
 
     for n in y:
       if board[board.index(y)][board[board.index(y)].index(n)]:
@@ -16,12 +17,28 @@ def drawboard():
       else:
         out += "."
 
-    print(out)
+    print(out + "|")
+  
+  print("-" for i in board + "----")
+
+
+# count
+def count(y, i):
+  pass
 
 
 # update
 def update():
-  pass
+  for y in board:
+    for i in y:
+      count = count(y, i)
+      
+      if board[board.index(y)][board[board.index(y)].index(n)]:
+        pass
+      
+      else:
+        pass
+        
 
 
 # main function
