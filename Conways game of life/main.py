@@ -1,13 +1,8 @@
+
 # imports
 import time
 import sys
 import os
-
-# get board
-with open(sys.argv[1], "r") as f:
-  board = list(f.read())
-  board_cp = board
-
 
 # draw board
 def drawboard():
@@ -41,4 +36,10 @@ def main():
 
 # if imported
 if __name__ == "__main__":
-  main()
+  
+  
+  # get board
+  with open(sys.argv[1], "r") as f:
+    board = list(f.read())
+    board_cp = board
+    main()
