@@ -37,7 +37,10 @@ def update():
         pass
       
       else:
-        pass
+        if count == 2 or count == 3:
+          board_cp[board.index(y)][board[board.index(y)].index(n)] = 1
+        
+        else: pass
         
 
 
