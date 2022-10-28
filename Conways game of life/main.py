@@ -25,6 +25,7 @@ def drawboard():
 # count
 def count(y, i):
   #board[board.index(y)][board[board.index(y)].index(n)]
+  pass
 
 
 # update
