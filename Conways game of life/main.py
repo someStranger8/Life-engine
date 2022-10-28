@@ -11,7 +11,7 @@ def drawboard():
     out = "|"
 
     for n in y:
-      if board[board.index(y)][board[board.index(y)].index(n)]:
+      if board[y][n]:
         out += "#"
 
       else:
@@ -24,7 +24,6 @@ def drawboard():
 
 # count
 def count(y, i):
-  #board[board.index(y)][board[board.index(y)].index(n)]
   pass
 
 
@@ -34,18 +33,18 @@ def update():
     for i in y:
       count = count(y, i)
       
-      if board[board.index(y)][board[board.index(y)].index(n)]:
+      if board[y][i]:
         if count < 2:
-          board_cp[board.index(y)][board[board.index(y)].index(n)] = 0
+          board_cp[y][i] = 0
         
         elif count > 3:
-          board_cp[board.index(y)][board[board.index(y)].index(n)] = 0
+          board_cp[y][i] = 0
         
         else: pass
       
       else:
         if count == 2 or count == 3:
-          board_cp[board.index(y)][board[board.index(y)].index(n)] = 1
+          board_cp[y][i] = 1
         
         else: pass
       
